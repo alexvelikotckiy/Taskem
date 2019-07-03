@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserTemplatesSetupCell" id="gTV-IL-0wX" customClass="UserTemplatesSetupCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="76" height="76"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="kLe-bm-YQt">
+                        <rect key="frame" x="58" y="6" width="12" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="Qn0-W0-mli"/>
+                            <constraint firstAttribute="height" constant="11" id="Z0f-P4-dER"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTa-ER-0yE" customClass="DesignableView" customModule="Taskem" customModuleProvider="target">
+                        <rect key="frame" x="20.5" y="10.5" width="35" height="35"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="1Y8-QL-p9R"/>
+                            <constraint firstAttribute="width" constant="35" id="iFP-Nj-zoa"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="Uac-m7-Oa7">
+                        <rect key="frame" x="28.5" y="13" width="19" height="30"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLE-oC-FNZ">
+                        <rect key="frame" x="23" y="50.5" width="30.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <color key="textColor" red="0.99990195039999996" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kLE-oC-FNZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="C6N-Uh-Uf8"/>
+                <constraint firstAttribute="trailing" secondItem="kLe-bm-YQt" secondAttribute="trailing" constant="6" id="HI2-jL-1bb"/>
+                <constraint firstItem="OTa-ER-0yE" firstAttribute="centerY" secondItem="Uac-m7-Oa7" secondAttribute="centerY" id="VVx-xZ-hFW"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kLE-oC-FNZ" secondAttribute="trailing" constant="5" id="g6a-8j-1A0"/>
+                <constraint firstItem="kLE-oC-FNZ" firstAttribute="top" secondItem="OTa-ER-0yE" secondAttribute="bottom" constant="5" id="h4p-wa-qUA"/>
+                <constraint firstItem="kLe-bm-YQt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="kAD-zg-b7d"/>
+                <constraint firstItem="kLE-oC-FNZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="kjB-HZ-C5I"/>
+                <constraint firstItem="Uac-m7-Oa7" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1:4" id="nkp-oR-m9Y"/>
+                <constraint firstItem="Uac-m7-Oa7" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-10" id="vke-YI-o8d"/>
+                <constraint firstItem="OTa-ER-0yE" firstAttribute="centerX" secondItem="Uac-m7-Oa7" secondAttribute="centerX" id="w8B-Qh-jVr"/>
+                <constraint firstItem="Uac-m7-Oa7" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yf5-Il-qHA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="138" height="138"/>
+            <connections>
+                <outlet property="icon" destination="Uac-m7-Oa7" id="4TR-Za-qae"/>
+                <outlet property="iconPlaceholder" destination="OTa-ER-0yE" id="3dk-8c-FHD"/>
+                <outlet property="iconPlaceholderHeight" destination="1Y8-QL-p9R" id="fuY-E0-oJy"/>
+                <outlet property="iconPlaceholderWidth" destination="iFP-Nj-zoa" id="T12-dx-hAU"/>
+                <outlet property="star" destination="kLe-bm-YQt" id="seN-s9-Sy9"/>
+                <outlet property="title" destination="kLE-oC-FNZ" id="VUa-dn-tnF"/>
+            </connections>
+            <point key="canvasLocation" x="51.200000000000003" y="57.571214392803604"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_star" width="12" height="11"/>
+    </resources>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarControlHeader" id="U6b-Vx-4bR" customClass="CalendarControlHeader" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeq-0t-kEh">
+                    <rect key="frame" x="20" y="14" width="41" height="22"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzS-k7-GDX">
+                    <rect key="frame" x="0.0" y="49" width="303" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="2SP-9P-aQ6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bzS-k7-GDX" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="46i-OV-83w"/>
+                <constraint firstItem="jeq-0t-kEh" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="E9L-3m-FoV"/>
+                <constraint firstItem="jeq-0t-kEh" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="EXS-Kx-EUk"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="bzS-k7-GDX" secondAttribute="trailing" id="kkt-V0-O1J"/>
+                <constraint firstItem="bzS-k7-GDX" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="pBV-np-BWx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="separator" destination="bzS-k7-GDX" id="I0p-i0-gsO"/>
+                <outlet property="title" destination="jeq-0t-kEh" id="uVL-VM-Fh2"/>
+            </connections>
+            <point key="canvasLocation" x="-56.799999999999997" y="154.72263868065968"/>
+        </collectionReusableView>
+    </objects>
+</document>

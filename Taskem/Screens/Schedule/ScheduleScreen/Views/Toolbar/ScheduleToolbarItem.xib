@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleToolbarItem" customModule="Taskem" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="HTG-Ek-rHq" id="YoH-47-ZhI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTG-Ek-rHq">
+                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="999" constant="44" id="AM6-sw-RrY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="touch:" destination="-1" eventType="touchUpInside" id="mba-7W-Byd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HTG-Ek-rHq" secondAttribute="trailing" id="3wv-WM-SCG"/>
+                <constraint firstItem="HTG-Ek-rHq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LXL-8T-und"/>
+                <constraint firstItem="HTG-Ek-rHq" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="xDn-c9-Civ"/>
+                <constraint firstItem="HTG-Ek-rHq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="yfD-x0-MZH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-91.200000000000003" y="-499.25037481259375"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell tag="1" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TaskNameCell" rowHeight="186" id="KGk-i7-Jjw" customClass="TaskNameCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="185.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="DlP-CN-QbG">
+                        <rect key="frame" x="50" y="5" width="250" height="180.66666666666666"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IuF-ge-seT">
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="46"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="letterSpace">
+                                        <real key="value" value="1.3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="2pi-WC-JIf" customClass="RSKPlaceholderTextView" customModule="Taskem" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49" width="250" height="131.66666666666666"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="60" id="Cyh-Q4-y5a"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter a task name..."/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulp-wR-l1U">
+                        <rect key="frame" x="5" y="28" width="40" height="40"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bT-oE-ZlM" customClass="Checkbox" customModule="Taskem" customModuleProvider="target">
+                                <rect key="frame" x="13" y="13" width="14" height="14"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="touchCheckbox:" destination="KGk-i7-Jjw" eventType="valueChanged" id="QCY-uP-Q3q"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HV-Cm-X4d">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCheckboxWrapper:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zHo-K6-XdC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3HV-Cm-X4d" firstAttribute="top" secondItem="Ulp-wR-l1U" secondAttribute="top" id="2uC-Qh-ulP"/>
+                            <constraint firstAttribute="width" constant="40" id="8Gm-fB-fKZ"/>
+                            <constraint firstItem="3HV-Cm-X4d" firstAttribute="leading" secondItem="Ulp-wR-l1U" secondAttribute="leading" id="GI9-qF-sEv"/>
+                            <constraint firstAttribute="trailing" secondItem="3HV-Cm-X4d" secondAttribute="trailing" id="Nur-HG-tGE"/>
+                            <constraint firstItem="9bT-oE-ZlM" firstAttribute="height" secondItem="3HV-Cm-X4d" secondAttribute="height" multiplier="0.35" id="YmS-Sl-cna"/>
+                            <constraint firstItem="9bT-oE-ZlM" firstAttribute="width" secondItem="3HV-Cm-X4d" secondAttribute="width" multiplier="0.35" id="f1T-GD-NKu"/>
+                            <constraint firstItem="9bT-oE-ZlM" firstAttribute="centerY" secondItem="3HV-Cm-X4d" secondAttribute="centerY" id="gBv-oA-QL6"/>
+                            <constraint firstAttribute="height" constant="40" id="h9q-bY-gRf"/>
+                            <constraint firstItem="9bT-oE-ZlM" firstAttribute="centerX" secondItem="3HV-Cm-X4d" secondAttribute="centerX" id="sCK-uk-Si2"/>
+                            <constraint firstAttribute="bottom" secondItem="3HV-Cm-X4d" secondAttribute="bottom" id="yrN-a1-sAe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ulp-wR-l1U" firstAttribute="top" secondItem="IuF-ge-seT" secondAttribute="centerY" id="LMF-Hb-EfB"/>
+                    <constraint firstItem="Ulp-wR-l1U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="OCa-j6-oOm"/>
+                    <constraint firstItem="DlP-CN-QbG" firstAttribute="leading" secondItem="Ulp-wR-l1U" secondAttribute="trailing" constant="5" id="RGG-8E-7TZ"/>
+                    <constraint firstAttribute="bottom" secondItem="DlP-CN-QbG" secondAttribute="bottom" id="SJK-db-lyw"/>
+                    <constraint firstItem="DlP-CN-QbG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="bhB-b0-DMf"/>
+                    <constraint firstAttribute="trailing" secondItem="DlP-CN-QbG" secondAttribute="trailing" constant="20" id="kCI-gs-BPg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkbox" destination="9bT-oE-ZlM" id="8eA-4L-9W7"/>
+                <outlet property="checkboxWrapper" destination="3HV-Cm-X4d" id="ugO-Xa-Sgv"/>
+                <outlet property="subtitle" destination="IuF-ge-seT" id="K0k-O9-ys5"/>
+                <outlet property="textView" destination="2pi-WC-JIf" id="1hR-PM-QvD"/>
+                <outlet property="textViewHeight" destination="Cyh-Q4-y5a" id="aXf-oP-v8h"/>
+            </connections>
+            <point key="canvasLocation" x="-62.399999999999999" y="70.197044334975374"/>
+        </tableViewCell>
+    </objects>
+</document>

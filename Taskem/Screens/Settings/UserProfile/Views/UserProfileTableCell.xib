@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserProfileTableCell" id="gUn-yJ-bAy" customClass="UserProfileTableCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gUn-yJ-bAy" id="UZD-mg-E7X">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="az0-UJ-ggD">
+                        <rect key="frame" x="20" y="13.5" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="JLw-5U-zLd"/>
+                            <constraint firstAttribute="width" constant="17" id="Z1Y-YD-S6b"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UEf-hj-X9y">
+                        <rect key="frame" x="52" y="0.0" width="252" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" text="TITLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1q-OO-qMx">
+                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="43.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpn-hX-exz">
+                                <rect key="frame" x="177.5" y="0.0" width="74.5" height="43.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="44" id="Kxe-dx-zcD"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UEf-hj-X9y" firstAttribute="top" secondItem="UZD-mg-E7X" secondAttribute="top" id="XRv-gm-SlH"/>
+                    <constraint firstItem="az0-UJ-ggD" firstAttribute="centerY" secondItem="UZD-mg-E7X" secondAttribute="centerY" id="aHR-Mg-os7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UEf-hj-X9y" secondAttribute="trailing" id="chY-vt-WbY"/>
+                    <constraint firstItem="az0-UJ-ggD" firstAttribute="leading" secondItem="UZD-mg-E7X" secondAttribute="leading" constant="20" id="hJ5-4j-qdx"/>
+                    <constraint firstAttribute="bottom" secondItem="UEf-hj-X9y" secondAttribute="bottom" id="oUR-1t-Wu2"/>
+                    <constraint firstItem="UEf-hj-X9y" firstAttribute="leading" secondItem="az0-UJ-ggD" secondAttribute="trailing" constant="15" id="uFP-8R-Kh3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="n6P-qe-lS3"/>
+            <connections>
+                <outlet property="descriptions" destination="Kpn-hX-exz" id="pFf-LC-yP1"/>
+                <outlet property="icon" destination="az0-UJ-ggD" id="Ge4-Jq-Yto"/>
+                <outlet property="title" destination="X1q-OO-qMx" id="Ztl-nq-GMc"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="48.575712143928037"/>
+        </tableViewCell>
+    </objects>
+</document>

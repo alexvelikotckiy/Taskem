@@ -1,0 +1,21 @@
+colors:
+  inputs:
+    - ../../../Library/Colors/TaskemMain.clr
+    - ../../../Library/Colors/TaskemLists.clr
+  outputs:
+    templatePath: ../Templates/swiftgen/literals-swift4.stencil
+    output: Generated/Colors.generated.swift
+    params:
+      enumName: Color
+      publicAccess: public
+xcassets:
+  inputs:
+    - Lists.xcassets
+    - Foundation.xcassets
+  outputs:
+    - templateName: swift4
+      output: Generated/Images.generated.swift
+      params:
+        enumName: Images
+        allValues: true
+        publicAccess: public

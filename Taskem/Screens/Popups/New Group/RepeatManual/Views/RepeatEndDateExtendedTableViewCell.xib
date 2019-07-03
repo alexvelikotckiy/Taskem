@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="RepeatEndDateExtendedTableViewCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="CKR-0B-7hd">
+                        <rect key="frame" x="16" y="0.0" width="346" height="219.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="nt0-NA-EtX">
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stop repeating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmI-3M-Bkx">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="44"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lho-Vc-yQq">
+                                        <rect key="frame" x="173" y="0.0" width="173" height="44"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFQ-aw-tmi">
+                                                <rect key="frame" x="0.0" y="0.0" width="173" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWw-Wi-UPA">
+                                                        <rect key="frame" x="158" y="14.5" width="15" height="15"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="15" id="akF-wj-M0Y"/>
+                                                            <constraint firstAttribute="width" constant="15" id="uDQ-jT-3Dc"/>
+                                                        </constraints>
+                                                        <state key="normal" image="ic_cancel">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="touchRemoveDate:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VNY-jQ-fpR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="d8i-1t-vKk">
+                                                        <rect key="frame" x="16" y="3.5" width="127" height="37.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="01 February, 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NN-qE-T0S">
+                                                                <rect key="frame" x="10" y="0.0" width="117" height="19.5"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in 10 month, 8 weeks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bK-56-zHM">
+                                                                <rect key="frame" x="0.0" y="19.5" width="127" height="18"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                                <color key="textColor" red="0.54211611680000005" green="0.54211611680000005" blue="0.54211611680000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="d8i-1t-vKk" firstAttribute="centerY" secondItem="VFQ-aw-tmi" secondAttribute="centerY" id="2Jd-St-JkK"/>
+                                                    <constraint firstItem="PWw-Wi-UPA" firstAttribute="leading" secondItem="d8i-1t-vKk" secondAttribute="trailing" constant="15" id="34k-9e-egh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PWw-Wi-UPA" secondAttribute="trailing" id="XXs-FC-r6x"/>
+                                                    <constraint firstItem="PWw-Wi-UPA" firstAttribute="centerY" secondItem="VFQ-aw-tmi" secondAttribute="centerY" id="flX-NO-XOe"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="VFQ-aw-tmi" secondAttribute="trailing" id="JXd-CQ-Zg2"/>
+                                            <constraint firstItem="VFQ-aw-tmi" firstAttribute="leading" secondItem="Lho-Vc-yQq" secondAttribute="leading" id="gpI-zb-mfm"/>
+                                            <constraint firstAttribute="bottom" secondItem="VFQ-aw-tmi" secondAttribute="bottom" id="uKI-en-iS9"/>
+                                            <constraint firstItem="VFQ-aw-tmi" firstAttribute="top" secondItem="Lho-Vc-yQq" secondAttribute="top" id="yu0-oc-gy9"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Kyf-HY-EDN"/>
+                                </constraints>
+                            </stackView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="O8C-fg-gan">
+                                <rect key="frame" x="0.0" y="44" width="346" height="175.5"/>
+                                <date key="date" timeIntervalSinceReferenceDate="542300929.31013703">
+                                    <!--2018-03-09 15:08:49 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="6nE-oJ-NeY"/>
+                                </connections>
+                            </datePicker>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="220" id="tpR-TY-vUF"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="CKR-0B-7hd" secondAttribute="bottom" id="Dzp-vr-WSp"/>
+                    <constraint firstAttribute="trailing" secondItem="CKR-0B-7hd" secondAttribute="trailing" constant="16" id="c38-ZK-Rnz"/>
+                    <constraint firstItem="CKR-0B-7hd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tBL-ot-ERz"/>
+                    <constraint firstItem="CKR-0B-7hd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ueY-Ge-zcV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="datePicker" destination="O8C-fg-gan" id="uyu-1Z-XjS"/>
+                <outlet property="endDate" destination="9NN-qE-T0S" id="94b-os-tff"/>
+                <outlet property="endDateSubtitle" destination="6bK-56-zHM" id="eoM-aB-MNO"/>
+                <outlet property="removeButton" destination="PWw-Wi-UPA" id="1aU-MH-C3O"/>
+                <outlet property="title" destination="lmI-3M-Bkx" id="rHD-Wk-mGI"/>
+            </connections>
+            <point key="canvasLocation" x="54" y="140"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_cancel" width="24" height="25"/>
+    </resources>
+</document>

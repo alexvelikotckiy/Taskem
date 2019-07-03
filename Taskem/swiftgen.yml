@@ -1,0 +1,8 @@
+xcassets:
+  inputs:
+    - Assets.xcassets
+  outputs:
+    - templateName: swift4
+      output: Generated/Assets.generated.swift
+      params:
+        enumName: Icons

@@ -1,0 +1,11 @@
+sources:
+  - .
+templates:
+  - ../Templates/sourcery
+output:
+  path: ./Generated
+  link:
+    project: Agenda.xcodeproj
+    target: AgendaFoundation
+    group: Generated
+args:

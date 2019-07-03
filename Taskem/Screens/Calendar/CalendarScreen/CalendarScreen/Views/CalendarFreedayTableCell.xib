@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CalendarFreedayTableCell" rowHeight="580" id="KGk-i7-Jjw" customClass="CalendarFreedayTableCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="580"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="579.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="a00-Zq-YV6">
+                        <rect key="frame" x="8.5" y="115" width="381" height="350"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rsh-hp-mKs">
+                                <rect key="frame" x="0.0" y="0.0" width="381" height="242"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_picture_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="0qs-fi-Whm">
+                                        <rect key="frame" x="0.0" y="0.0" width="381" height="242"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_free_day_light" translatesAutoresizingMaskIntoConstraints="NO" id="nAe-2s-pCq">
+                                        <rect key="frame" x="80" y="-28.5" width="221" height="299"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="0qs-fi-Whm" firstAttribute="top" secondItem="Rsh-hp-mKs" secondAttribute="top" id="48A-iq-Aim"/>
+                                    <constraint firstItem="nAe-2s-pCq" firstAttribute="centerY" secondItem="Rsh-hp-mKs" secondAttribute="centerY" id="6L5-zU-2V6"/>
+                                    <constraint firstItem="nAe-2s-pCq" firstAttribute="centerX" secondItem="Rsh-hp-mKs" secondAttribute="centerX" id="LgT-H0-M5n"/>
+                                    <constraint firstItem="0qs-fi-Whm" firstAttribute="leading" secondItem="Rsh-hp-mKs" secondAttribute="leading" id="Swc-fh-XmC"/>
+                                    <constraint firstAttribute="bottom" secondItem="0qs-fi-Whm" secondAttribute="bottom" id="U0L-dj-Q2I"/>
+                                    <constraint firstAttribute="trailing" secondItem="0qs-fi-Whm" secondAttribute="trailing" id="flT-tq-BCY"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="D8A-0b-s84">
+                                <rect key="frame" x="103" y="287" width="175.5" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FREE DAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOl-JG-QKk">
+                                        <rect key="frame" x="40.5" y="0.0" width="94" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.47058823529999999" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap here to create new task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjA-kg-sLr">
+                                        <rect key="frame" x="0.0" y="43.5" width="175.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                        <color key="textColor" red="0.27804309129714966" green="0.31624829769134521" blue="0.40359961986541748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="a00-Zq-YV6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Uci-h2-scP"/>
+                    <constraint firstItem="a00-Zq-YV6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Y8F-Op-p19"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="icon" destination="nAe-2s-pCq" id="0Bc-dW-IiH"/>
+                <outlet property="iconPlaceholder" destination="0qs-fi-Whm" id="8vP-RB-WuX"/>
+                <outlet property="subtitle" destination="PjA-kg-sLr" id="5gC-cf-rjB"/>
+                <outlet property="title" destination="iOl-JG-QKk" id="6Kg-Yf-Kiy"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="290.55472263868069"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_free_day_light" width="221" height="299"/>
+        <image name="ic_picture_placeholder" width="321" height="242"/>
+    </resources>
+</document>

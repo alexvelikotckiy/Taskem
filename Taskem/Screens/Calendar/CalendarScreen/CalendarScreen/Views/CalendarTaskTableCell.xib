@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CalendarTaskTableCell" rowHeight="97" id="Ccl-Oy-dB2" customClass="CalendarTaskTableCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ccl-Oy-dB2" id="2Eu-s6-hjg">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="92.666666666666671"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sCl-CW-hy0">
+                        <rect key="frame" x="5" y="26.333333333333329" width="40" height="40"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jwZ-Iw-xlq" customClass="Checkbox" customModule="Taskem" customModuleProvider="target">
+                                <rect key="frame" x="13" y="13.000000000000004" width="14" height="14"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yY-FB-YOv">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchCheckbox:" destination="Ccl-Oy-dB2" eventType="touchUpInside" id="nXh-0h-qmB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jwZ-Iw-xlq" firstAttribute="centerX" secondItem="2yY-FB-YOv" secondAttribute="centerX" id="4S6-Et-2SH"/>
+                            <constraint firstItem="2yY-FB-YOv" firstAttribute="leading" secondItem="sCl-CW-hy0" secondAttribute="leading" id="CUo-Fq-oeg"/>
+                            <constraint firstAttribute="bottom" secondItem="2yY-FB-YOv" secondAttribute="bottom" id="GFM-0X-Mn1"/>
+                            <constraint firstItem="jwZ-Iw-xlq" firstAttribute="centerY" secondItem="2yY-FB-YOv" secondAttribute="centerY" id="KqM-s2-hbQ"/>
+                            <constraint firstItem="2yY-FB-YOv" firstAttribute="top" secondItem="sCl-CW-hy0" secondAttribute="top" id="U0g-58-ICY"/>
+                            <constraint firstAttribute="height" constant="40" id="WKg-Jd-nKM"/>
+                            <constraint firstAttribute="width" constant="40" id="axe-Pc-oSF"/>
+                            <constraint firstItem="jwZ-Iw-xlq" firstAttribute="height" secondItem="2yY-FB-YOv" secondAttribute="height" multiplier="0.35" id="hG4-na-qYj"/>
+                            <constraint firstAttribute="trailing" secondItem="2yY-FB-YOv" secondAttribute="trailing" id="uMR-TH-zzF"/>
+                            <constraint firstItem="jwZ-Iw-xlq" firstAttribute="width" secondItem="2yY-FB-YOv" secondAttribute="width" multiplier="0.35" id="yq3-5H-Hyc"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmR-Rp-N38">
+                        <rect key="frame" x="49.999999999999986" y="9.9999999999999964" width="211.66666666666663" height="54.666666666666657"/>
+                        <attributedString key="attributedText">
+                            <fragment>
+                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <attributes>
+                                    <font key="NSFont" size="14" name="AvenirNext-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="lHW-bq-Pmx">
+                        <rect key="frame" x="49.999999999999986" y="69.666666666666671" width="211.66666666666663" height="13"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_schedule_repeat" translatesAutoresizingMaskIntoConstraints="NO" id="gDs-Zz-cD4">
+                                <rect key="frame" x="0.0" y="0.0" width="13" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="Air-3D-1to"/>
+                                    <constraint firstAttribute="height" constant="13" id="CwW-ic-xXr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_schedule_reminder" translatesAutoresizingMaskIntoConstraints="NO" id="qDW-c0-07U">
+                                <rect key="frame" x="20" y="0.0" width="12" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="4M9-Vb-Rqb"/>
+                                    <constraint firstAttribute="height" constant="13" id="ub9-RB-qIg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsb-xl-upa">
+                                <rect key="frame" x="39" y="0.0" width="172.66666666666666" height="13"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="AvenirNext-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Pkj-sf-E5B">
+                        <rect key="frame" x="281.66666666666669" y="34.333333333333336" width="93.333333333333314" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="12:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZK-DN-28k">
+                                <rect key="frame" x="0.0" y="0.0" width="54.333333333333336" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="InX-yG-1wa">
+                                <rect key="frame" x="69.333333333333314" y="0.0" width="24" height="24"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="15" placeholderIntrinsicHeight="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ubz-pL-EbD">
+                                        <rect key="frame" x="6" y="5" width="12" height="14"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ubz-pL-EbD" firstAttribute="centerX" secondItem="InX-yG-1wa" secondAttribute="centerX" id="2r0-3k-5Wn"/>
+                                    <constraint firstItem="Ubz-pL-EbD" firstAttribute="width" secondItem="InX-yG-1wa" secondAttribute="height" multiplier="1:2" id="NlD-HB-15i"/>
+                                    <constraint firstItem="Ubz-pL-EbD" firstAttribute="top" secondItem="InX-yG-1wa" secondAttribute="top" constant="5" id="cAV-zv-R0W"/>
+                                    <constraint firstAttribute="width" constant="24" id="ndt-vf-CG8"/>
+                                    <constraint firstAttribute="height" constant="24" id="rii-IR-Yza"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ubz-pL-EbD" secondAttribute="bottom" constant="5" id="xws-r1-PjE"/>
+                                    <constraint firstItem="Ubz-pL-EbD" firstAttribute="centerY" secondItem="InX-yG-1wa" secondAttribute="centerY" id="yML-i2-i6v"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="G5I-DY-dTh" firstAttribute="bottom" secondItem="lHW-bq-Pmx" secondAttribute="bottom" constant="10" id="Kat-qe-4tA"/>
+                    <constraint firstItem="lHW-bq-Pmx" firstAttribute="trailing" secondItem="UmR-Rp-N38" secondAttribute="trailing" id="LdW-Gl-p3c"/>
+                    <constraint firstItem="Pkj-sf-E5B" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UmR-Rp-N38" secondAttribute="trailing" constant="20" id="M1Y-vq-vhm"/>
+                    <constraint firstItem="sCl-CW-hy0" firstAttribute="leading" secondItem="2Eu-s6-hjg" secondAttribute="leading" constant="5" id="SWa-ak-ZPb"/>
+                    <constraint firstItem="UmR-Rp-N38" firstAttribute="top" secondItem="G5I-DY-dTh" secondAttribute="top" constant="10" id="VqW-nO-X3n"/>
+                    <constraint firstItem="lHW-bq-Pmx" firstAttribute="top" secondItem="UmR-Rp-N38" secondAttribute="bottom" constant="5" id="Z3f-50-JTm"/>
+                    <constraint firstItem="lHW-bq-Pmx" firstAttribute="leading" secondItem="UmR-Rp-N38" secondAttribute="leading" id="t7e-Ry-M2w"/>
+                    <constraint firstItem="sCl-CW-hy0" firstAttribute="centerY" secondItem="2Eu-s6-hjg" secondAttribute="centerY" id="tT2-Qp-rmO"/>
+                    <constraint firstItem="UmR-Rp-N38" firstAttribute="leading" secondItem="sCl-CW-hy0" secondAttribute="trailing" constant="5" id="vGh-AN-BxL"/>
+                    <constraint firstItem="G5I-DY-dTh" firstAttribute="trailing" secondItem="Pkj-sf-E5B" secondAttribute="trailing" constant="25" id="w2x-dA-LsG"/>
+                    <constraint firstItem="Pkj-sf-E5B" firstAttribute="centerY" secondItem="2Eu-s6-hjg" secondAttribute="centerY" id="we5-Bi-W53"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="G5I-DY-dTh"/>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="bzC-hA-Gfh"/>
+            <connections>
+                <outlet property="bottomPadding" destination="Kat-qe-4tA" id="TTj-xg-Fvd"/>
+                <outlet property="checkbox" destination="jwZ-Iw-xlq" id="0av-WW-QCh"/>
+                <outlet property="checkboxWrapper" destination="2yY-FB-YOv" id="qah-Ml-RHb"/>
+                <outlet property="icon" destination="Ubz-pL-EbD" id="gXy-8L-3M2"/>
+                <outlet property="iconPlaceholder" destination="InX-yG-1wa" id="1PK-1B-aLD"/>
+                <outlet property="reminderIcon" destination="qDW-c0-07U" id="kYE-ue-vH1"/>
+                <outlet property="repeatIcon" destination="gDs-Zz-cD4" id="mQm-UZ-Qxp"/>
+                <outlet property="subtitle" destination="Nsb-xl-upa" id="ArI-5b-ceB"/>
+                <outlet property="time" destination="tZK-DN-28k" id="VEj-1x-Tju"/>
+                <outlet property="title" destination="UmR-Rp-N38" id="zDt-dp-mJB"/>
+                <outlet property="topPadding" destination="VqW-nO-X3n" id="5sh-L6-hUC"/>
+            </connections>
+            <point key="canvasLocation" x="84.799999999999997" y="189.53201970443351"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_schedule_reminder" width="12" height="13"/>
+        <image name="ic_schedule_repeat" width="12" height="12"/>
+    </resources>
+</document>

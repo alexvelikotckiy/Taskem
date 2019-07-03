@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleNavigationBarCell" customModule="Taskem" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="Men-P4-VMK" id="uJr-DE-2uW"/>
+                <outlet property="icon" destination="NFF-il-dve" id="3DL-E1-4hs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Men-P4-VMK">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="NFF-il-dve">
+                    <rect key="frame" x="20" y="15" width="20" height="30"/>
+                    <color key="tintColor" red="0.99990195039999996" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Men-P4-VMK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Z1-7H-eh5"/>
+                <constraint firstItem="NFF-il-dve" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CiL-YR-lVm"/>
+                <constraint firstAttribute="bottom" secondItem="Men-P4-VMK" secondAttribute="bottom" id="HsZ-At-FUU"/>
+                <constraint firstItem="NFF-il-dve" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Uj3-QT-0oI"/>
+                <constraint firstAttribute="trailing" secondItem="Men-P4-VMK" secondAttribute="trailing" id="VwJ-rV-dl8"/>
+                <constraint firstItem="NFF-il-dve" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:3" id="ca9-KT-Wle"/>
+                <constraint firstItem="Men-P4-VMK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="udM-DQ-55h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-118.40000000000001" y="-126.83658170914543"/>
+        </view>
+    </objects>
+</document>

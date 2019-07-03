@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarControlGroupCell" id="gTV-IL-0wX" customClass="CalendarControlGroupCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckg-Ye-O7I" customClass="DesignableView" customModule="Taskem" customModuleProvider="target">
+                        <rect key="frame" x="32.5" y="22.5" width="35" height="35"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="OWD-7g-psV"/>
+                            <constraint firstAttribute="height" constant="35" id="YFO-38-Po9"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="30" translatesAutoresizingMaskIntoConstraints="NO" id="qr8-hm-sb0">
+                        <rect key="frame" x="42.5" y="25" width="15" height="30"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGV-V4-I6Q">
+                        <rect key="frame" x="35" y="62.5" width="30.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <color key="textColor" red="0.99990195039999996" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-oV-b3E">
+                        <rect key="frame" x="78" y="10" width="12" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="PpS-ui-Plj"/>
+                            <constraint firstAttribute="width" constant="12" id="U0z-a2-GXk"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="qr8-hm-sb0" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-10" id="5ZB-AQ-mGR"/>
+                <constraint firstAttribute="trailing" secondItem="Z81-oV-b3E" secondAttribute="trailing" constant="10" id="8zL-iR-knZ"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IGV-V4-I6Q" secondAttribute="trailing" constant="5" id="CCO-de-DqD"/>
+                <constraint firstItem="ckg-Ye-O7I" firstAttribute="centerY" secondItem="qr8-hm-sb0" secondAttribute="centerY" id="K8F-bg-u5j"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="IGV-V4-I6Q" secondAttribute="bottom" constant="5" id="Lgd-z0-0q8"/>
+                <constraint firstItem="qr8-hm-sb0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="NWz-Cc-oXU"/>
+                <constraint firstItem="ckg-Ye-O7I" firstAttribute="centerX" secondItem="qr8-hm-sb0" secondAttribute="centerX" id="gXy-Kf-8Oh"/>
+                <constraint firstItem="IGV-V4-I6Q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="hb1-I3-yby"/>
+                <constraint firstItem="IGV-V4-I6Q" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="jxw-dt-6hf"/>
+                <constraint firstItem="qr8-hm-sb0" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="1:4" constant="-10" id="l59-et-siZ"/>
+                <constraint firstItem="Z81-oV-b3E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="lKW-8i-tfY"/>
+                <constraint firstItem="IGV-V4-I6Q" firstAttribute="top" secondItem="ckg-Ye-O7I" secondAttribute="bottom" constant="5" id="nOr-aY-LxB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="118" height="118"/>
+            <connections>
+                <outlet property="icon" destination="qr8-hm-sb0" id="qB7-G5-Ouq"/>
+                <outlet property="iconPlaceholder" destination="ckg-Ye-O7I" id="bZE-KQ-mJb"/>
+                <outlet property="iconPlaceholderHeight" destination="YFO-38-Po9" id="TTq-vu-BbM"/>
+                <outlet property="iconPlaceholderWidth" destination="OWD-7g-psV" id="pgM-zI-kPn"/>
+                <outlet property="star" destination="Z81-oV-b3E" id="lGE-kW-hyO"/>
+                <outlet property="title" destination="IGV-V4-I6Q" id="auO-5e-OTr"/>
+            </connections>
+            <point key="canvasLocation" x="192" y="184.40779610194903"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_star" width="12" height="11"/>
+    </resources>
+</document>

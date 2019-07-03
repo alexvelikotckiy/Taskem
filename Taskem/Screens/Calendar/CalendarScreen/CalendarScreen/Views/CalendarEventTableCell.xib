@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CalendarEventTableCell" rowHeight="89" id="KGk-i7-Jjw" customClass="CalendarEventTableCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9do-EO-Mrv">
+                        <rect key="frame" x="5" y="24.5" width="40" height="40"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8K-Ye-x4Y" customClass="Checkbox" customModule="Taskem" customModuleProvider="target">
+                                <rect key="frame" x="13" y="13" width="14" height="14"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPn-Yu-xaJ">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b8K-Ye-x4Y" firstAttribute="centerX" secondItem="kPn-Yu-xaJ" secondAttribute="centerX" id="7FU-RQ-5Aj"/>
+                            <constraint firstItem="b8K-Ye-x4Y" firstAttribute="centerY" secondItem="kPn-Yu-xaJ" secondAttribute="centerY" id="Cbj-hE-OBj"/>
+                            <constraint firstItem="kPn-Yu-xaJ" firstAttribute="leading" secondItem="9do-EO-Mrv" secondAttribute="leading" id="E2t-GK-UWF"/>
+                            <constraint firstAttribute="trailing" secondItem="kPn-Yu-xaJ" secondAttribute="trailing" id="FlC-41-ZDY"/>
+                            <constraint firstAttribute="bottom" secondItem="kPn-Yu-xaJ" secondAttribute="bottom" id="IVQ-pT-Yca"/>
+                            <constraint firstAttribute="width" constant="40" id="VEp-Fb-XzM"/>
+                            <constraint firstItem="b8K-Ye-x4Y" firstAttribute="height" secondItem="kPn-Yu-xaJ" secondAttribute="height" multiplier="0.35" id="a7l-Z0-Zx5"/>
+                            <constraint firstItem="kPn-Yu-xaJ" firstAttribute="top" secondItem="9do-EO-Mrv" secondAttribute="top" id="bfn-Vs-OLc"/>
+                            <constraint firstItem="b8K-Ye-x4Y" firstAttribute="width" secondItem="kPn-Yu-xaJ" secondAttribute="width" multiplier="0.35" id="f4Y-If-ZGD"/>
+                            <constraint firstAttribute="height" constant="40" id="taQ-Vv-2K7"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0N-Du-UCI">
+                        <rect key="frame" x="50" y="10" width="136.5" height="47"/>
+                        <attributedString key="attributedText">
+                            <fragment>
+                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <attributes>
+                                    <font key="NSFont" size="14" name="AvenirNext-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ezf-aG-Sv3">
+                        <rect key="frame" x="50" y="62" width="136.5" height="16.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0N-0f-meL">
+                                <rect key="frame" x="0.0" y="0.0" width="136.5" height="16.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="AvenirNext-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="6OV-Tk-awe">
+                        <rect key="frame" x="206.5" y="19.5" width="93.5" height="50"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lXc-WD-Gku">
+                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="12:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-tR-AxS">
+                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="12:00 AM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3K-Be-Ag5">
+                                        <rect key="frame" x="0.0" y="25" width="54.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9CG-Qc-CtK" userLabel="Gap">
+                                <rect key="frame" x="69.5" y="0.0" width="24" height="50"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="Gkc-la-alW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9do-EO-Mrv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dbe-C2-h63"/>
+                    <constraint firstItem="9do-EO-Mrv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="NM4-Z4-rsf"/>
+                    <constraint firstAttribute="bottom" secondItem="ezf-aG-Sv3" secondAttribute="bottom" constant="10" id="Rij-J1-3QV"/>
+                    <constraint firstItem="6OV-Tk-awe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SWL-KC-eKu"/>
+                    <constraint firstAttribute="trailing" secondItem="6OV-Tk-awe" secondAttribute="trailing" constant="20" id="h7H-Wx-MA1"/>
+                    <constraint firstItem="F0N-Du-UCI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jaV-vQ-1ri"/>
+                    <constraint firstItem="ezf-aG-Sv3" firstAttribute="top" secondItem="F0N-Du-UCI" secondAttribute="bottom" constant="5" id="nOq-Q7-8Px"/>
+                    <constraint firstItem="ezf-aG-Sv3" firstAttribute="trailing" secondItem="F0N-Du-UCI" secondAttribute="trailing" id="ndE-gL-Uqc"/>
+                    <constraint firstItem="6OV-Tk-awe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="F0N-Du-UCI" secondAttribute="trailing" constant="20" id="tpf-O7-BBZ"/>
+                    <constraint firstItem="ezf-aG-Sv3" firstAttribute="leading" secondItem="F0N-Du-UCI" secondAttribute="leading" id="vis-C5-Amt"/>
+                    <constraint firstItem="F0N-Du-UCI" firstAttribute="leading" secondItem="9do-EO-Mrv" secondAttribute="trailing" constant="5" id="y52-9m-nVS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomPadding" destination="Rij-J1-3QV" id="5pl-kr-r8P"/>
+                <outlet property="checkbox" destination="b8K-Ye-x4Y" id="hom-Xe-CDn"/>
+                <outlet property="end" destination="N3K-Be-Ag5" id="tX8-cf-8Dr"/>
+                <outlet property="start" destination="vEe-tR-AxS" id="Hui-u5-D5o"/>
+                <outlet property="subtitle" destination="K0N-0f-meL" id="eA5-yK-C2v"/>
+                <outlet property="title" destination="F0N-Du-UCI" id="F1I-Pb-fEt"/>
+                <outlet property="topPadding" destination="jaV-vQ-1ri" id="FnH-Aw-iFQ"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="69.715142428785612"/>
+        </tableViewCell>
+    </objects>
+</document>

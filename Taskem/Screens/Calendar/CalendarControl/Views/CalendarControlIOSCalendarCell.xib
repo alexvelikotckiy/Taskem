@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarControlIOSCalendarCell" id="gTV-IL-0wX" customClass="CalendarControlIOSCalendarCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Baw-Hf-moc" customClass="DesignableView" customModule="Taskem" customModuleProvider="target">
+                        <rect key="frame" x="32.5" y="22.5" width="35" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="A" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jt-Xa-zMw">
+                                <rect key="frame" x="11" y="5" width="13" height="25"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                <color key="textColor" red="0.99990195039999996" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Jt-Xa-zMw" firstAttribute="centerY" secondItem="Baw-Hf-moc" secondAttribute="centerY" id="FeV-ON-mWy"/>
+                            <constraint firstAttribute="width" constant="35" id="OFF-tB-yvn"/>
+                            <constraint firstAttribute="height" constant="35" id="ZHk-kp-kqV"/>
+                            <constraint firstItem="7Jt-Xa-zMw" firstAttribute="centerX" secondItem="Baw-Hf-moc" secondAttribute="centerX" id="iDJ-zu-b0z"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7P-Zs-Db0">
+                        <rect key="frame" x="35" y="62.5" width="30.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                        <color key="textColor" red="0.99990195039999996" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="a7P-Zs-Db0" firstAttribute="top" secondItem="Baw-Hf-moc" secondAttribute="bottom" constant="5" id="0pD-11-MiA"/>
+                <constraint firstItem="a7P-Zs-Db0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2MY-09-TUM"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="a7P-Zs-Db0" secondAttribute="trailing" constant="5" id="3JC-OX-mxG"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="a7P-Zs-Db0" secondAttribute="bottom" constant="5" id="4X7-PJ-PdL"/>
+                <constraint firstItem="7Jt-Xa-zMw" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="LZy-Aw-bNm"/>
+                <constraint firstItem="7Jt-Xa-zMw" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" constant="-10" id="X7c-Es-HJR"/>
+                <constraint firstItem="a7P-Zs-Db0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="eYB-JB-4kG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="100" height="100"/>
+            <connections>
+                <outlet property="name" destination="7Jt-Xa-zMw" id="7Wg-iT-9UD"/>
+                <outlet property="namePlaceholder" destination="Baw-Hf-moc" id="4iU-Rz-XT9"/>
+                <outlet property="namePlaceholderHeight" destination="ZHk-kp-kqV" id="zm7-ha-Ua4"/>
+                <outlet property="namePlaceholderWidth" destination="OFF-tB-yvn" id="Rde-eR-BaI"/>
+                <outlet property="title" destination="a7P-Zs-Db0" id="YO5-PN-T6X"/>
+            </connections>
+            <point key="canvasLocation" x="177.59999999999999" y="176.31184407796104"/>
+        </collectionViewCell>
+    </objects>
+</document>

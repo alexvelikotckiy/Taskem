@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleTableViewHeader" customModule="Taskem" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScheduleTableViewHeader" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfS-Na-Vmm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWS-JZ-uRv" userLabel="Header">
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="43"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm9-l3-iqm">
+                                    <rect key="frame" x="25" y="12" width="79" height="19.5"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPu-17-Yzq">
+                                    <rect key="frame" x="0.0" y="0.0" width="285" height="43"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                    <connections>
+                                        <action selector="onTouchToogle:" destination="-1" eventType="touchUpInside" id="zw4-QC-e2L"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="aPu-17-Yzq" firstAttribute="top" secondItem="WWS-JZ-uRv" secondAttribute="top" id="67k-I2-y2p"/>
+                                <constraint firstItem="aPu-17-Yzq" firstAttribute="leading" secondItem="WWS-JZ-uRv" secondAttribute="leading" id="AH1-0q-aqZ"/>
+                                <constraint firstItem="nm9-l3-iqm" firstAttribute="centerY" secondItem="WWS-JZ-uRv" secondAttribute="centerY" id="cQO-GK-2wF"/>
+                                <constraint firstAttribute="bottom" secondItem="aPu-17-Yzq" secondAttribute="bottom" id="kSh-SW-uOB"/>
+                                <constraint firstItem="nm9-l3-iqm" firstAttribute="leading" secondItem="WWS-JZ-uRv" secondAttribute="leading" constant="25" id="rSg-CF-T1L"/>
+                                <constraint firstAttribute="trailing" secondItem="aPu-17-Yzq" secondAttribute="trailing" id="wZ3-ge-5Ph"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iad-Mi-M1R">
+                            <rect key="frame" x="285" y="0.0" width="90" height="43"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vo6-5O-UrQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="43"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="999" constant="50" id="ZOo-Vp-eoI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                    <state key="normal" title="10">
+                                        <color key="titleColor" red="0.47058823529999999" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onTouchAction:" destination="-1" eventType="touchUpInside" id="qLm-HL-ps4"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcc-qF-HgJ">
+                                    <rect key="frame" x="50" y="0.0" width="40" height="43"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="999" constant="40" id="wNv-X4-tjm"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_schedule_chevron"/>
+                                    <connections>
+                                        <action selector="onTouchToogle:" destination="-1" eventType="touchUpInside" id="dD5-94-WIF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Iad-Mi-M1R" firstAttribute="leading" secondItem="WWS-JZ-uRv" secondAttribute="trailing" id="1XB-7e-9az"/>
+                        <constraint firstAttribute="trailing" secondItem="Iad-Mi-M1R" secondAttribute="trailing" id="IOw-jt-ebD"/>
+                        <constraint firstAttribute="bottom" secondItem="Iad-Mi-M1R" secondAttribute="bottom" id="caV-fc-VQi"/>
+                        <constraint firstAttribute="bottom" secondItem="WWS-JZ-uRv" secondAttribute="bottom" id="cfD-dq-D7X"/>
+                        <constraint firstItem="WWS-JZ-uRv" firstAttribute="top" secondItem="QfS-Na-Vmm" secondAttribute="top" id="klT-Au-3SS"/>
+                        <constraint firstItem="Iad-Mi-M1R" firstAttribute="top" secondItem="QfS-Na-Vmm" secondAttribute="top" id="qU6-ZR-VJp"/>
+                        <constraint firstItem="WWS-JZ-uRv" firstAttribute="leading" secondItem="QfS-Na-Vmm" secondAttribute="leading" id="z3I-Zc-9nY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="QfS-Na-Vmm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y0b-nf-0da"/>
+                <constraint firstAttribute="bottom" secondItem="QfS-Na-Vmm" secondAttribute="bottom" id="g16-p9-p3O"/>
+                <constraint firstAttribute="trailing" secondItem="QfS-Na-Vmm" secondAttribute="trailing" id="gwO-oC-hsT"/>
+                <constraint firstItem="QfS-Na-Vmm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zh3-L1-GfB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="action" destination="Vo6-5O-UrQ" id="e0v-uC-C8v"/>
+                <outlet property="chevron" destination="Mcc-qF-HgJ" id="iDE-7f-vWg"/>
+                <outlet property="expand" destination="aPu-17-Yzq" id="e7m-Jb-23O"/>
+                <outlet property="title" destination="nm9-l3-iqm" id="vqF-UJ-P8F"/>
+            </connections>
+            <point key="canvasLocation" x="224.80000000000001" y="-98.50074962518741"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_schedule_chevron" width="6" height="13"/>
+    </resources>
+</document>

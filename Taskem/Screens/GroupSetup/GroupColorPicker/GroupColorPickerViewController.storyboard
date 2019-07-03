@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pick a color-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GroupColorPickerViewControllerID" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="GroupColorPickerViewController" customModule="Taskem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ocf-Ko-YKI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eOt-Di-Btg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aLC-Bz-wqS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NF0-vW-QG1" firstAttribute="bottom" secondItem="Ocf-Ko-YKI" secondAttribute="bottom" id="67W-AN-Jd4"/>
+                            <constraint firstItem="Ocf-Ko-YKI" firstAttribute="top" secondItem="NF0-vW-QG1" secondAttribute="top" id="7kd-86-ISX"/>
+                            <constraint firstItem="Ocf-Ko-YKI" firstAttribute="leading" secondItem="NF0-vW-QG1" secondAttribute="leading" id="a1z-J2-E0p"/>
+                            <constraint firstAttribute="trailing" secondItem="Ocf-Ko-YKI" secondAttribute="trailing" id="uAt-PG-ozb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NF0-vW-QG1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pick a color" largeTitleDisplayMode="always" id="GW3-aA-6zr"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ocf-Ko-YKI" id="Y4W-gv-1SO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

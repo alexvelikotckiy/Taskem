@@ -1,0 +1,19 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+public protocol {{ prefix }}{{ module_info.name }}ViewDelegate: class {
+    func onViewWillAppear()
+}
+
+public protocol {{ prefix }}{{ module_info.name }}View: class {
+    var delegate: {{ prefix }}{{ module_info.name }}ViewDelegate? { get set }
+
+    func display(_ viewModel: {{ prefix }}{{ module_info.name }}ViewModel)
+}

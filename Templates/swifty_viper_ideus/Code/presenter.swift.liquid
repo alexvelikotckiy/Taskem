@@ -1,0 +1,40 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+public class {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}ViewDelegate {
+
+    weak var view: {{ prefix }}{{ module_info.name }}View?
+    var router: {{ prefix }}{{ module_info.name }}Router
+    var interactor: {{ prefix }}{{ module_info.name }}Interactor
+
+    public init(view: {{ prefix }}{{ module_info.name }}View, router: {{ prefix }}{{ module_info.name }}Router, interactor: {{ prefix }}{{ module_info.name }}Interactor) {
+        self.router = router
+        self.interactor = interactor
+        self.interactor.delegate = self
+
+        self.view = view
+        if let view = self.view {
+            view.delegate = self
+        }
+    }
+
+    func displayViewModel() {
+
+    }
+
+    public func onViewWillAppear() {
+	displayViewModel()
+    }
+
+}
+
+extension {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}InteractorOutput {
+
+}

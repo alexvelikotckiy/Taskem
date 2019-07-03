@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule View Controller-->
+        <scene sceneID="iDP-4t-Uh5">
+            <objects>
+                <viewController storyboardIdentifier="ScheduleViewControllerID" id="2gg-xO-ImH" customClass="ScheduleViewController" customModule="Taskem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zcG-aD-9v2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDW-VW-P8S" customClass="ScheduleTable" customModule="Taskem" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="y4X-NZ-d29">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JDW-VW-P8S" firstAttribute="trailing" secondItem="hCi-Um-Vkl" secondAttribute="trailing" id="Czg-lv-V2U"/>
+                            <constraint firstItem="hCi-Um-Vkl" firstAttribute="bottom" secondItem="JDW-VW-P8S" secondAttribute="bottom" id="HVf-Jj-aE9"/>
+                            <constraint firstItem="JDW-VW-P8S" firstAttribute="leading" secondItem="hCi-Um-Vkl" secondAttribute="leading" id="sh9-zm-Sl3"/>
+                            <constraint firstItem="JDW-VW-P8S" firstAttribute="top" secondItem="hCi-Um-Vkl" secondAttribute="top" id="vsf-tT-nAq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hCi-Um-Vkl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DDe-zW-THO" customClass="ScheduleNavigationBarItem" customModule="Taskem" customModuleProvider="target"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="JDW-VW-P8S" id="Yrr-Lo-1td"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUs-OV-wQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="239.73013493253376"/>
+        </scene>
+    </scenes>
+</document>

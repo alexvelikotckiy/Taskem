@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Notes-->
+        <scene sceneID="4fO-xG-RPi">
+            <objects>
+                <viewController storyboardIdentifier="TaskNotesViewControllerID" id="mKJ-F1-jhZ" customClass="TaskNotesViewController" customModule="Taskem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zG4-pe-Xrr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lmw-QJ-WAL" customClass="RSKPlaceholderTextView" customModule="Taskem" customModuleProvider="target">
+                                <rect key="frame" x="15" y="103" width="345" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Add notes..."/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lmw-QJ-WAL" firstAttribute="leading" secondItem="FLI-OM-CZK" secondAttribute="leading" constant="15" id="gRL-Xe-I0Z"/>
+                            <constraint firstItem="Lmw-QJ-WAL" firstAttribute="bottom" secondItem="FLI-OM-CZK" secondAttribute="bottom" constant="15" id="zFh-U9-tFl"/>
+                            <constraint firstItem="FLI-OM-CZK" firstAttribute="trailing" secondItem="Lmw-QJ-WAL" secondAttribute="trailing" constant="15" id="zOU-0S-MQd"/>
+                            <constraint firstItem="Lmw-QJ-WAL" firstAttribute="top" secondItem="FLI-OM-CZK" secondAttribute="top" constant="15" id="zb3-FS-mLv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FLI-OM-CZK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Notes" id="Hoy-Bf-1dy"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="textView" destination="Lmw-QJ-WAL" id="Aj7-Aa-Alu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhm-t4-itT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344.80000000000001" y="-346.55172413793105"/>
+        </scene>
+    </scenes>
+</document>

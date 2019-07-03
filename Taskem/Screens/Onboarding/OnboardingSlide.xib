@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingSlide" customModule="Taskem" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="zqV-xG-PPT" id="gho-S9-7my"/>
+                <outlet property="icon" destination="EPT-4l-SU2" id="fmN-1j-unn"/>
+                <outlet property="title" destination="y0A-Yh-BIi" id="wa1-Xh-vQi"/>
+                <outlet property="waveIcon" destination="lCs-xl-BSN" id="BGe-3C-tv1"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="531"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="H2K-02-liI">
+                    <rect key="frame" x="0.0" y="45.333333333333343" width="361" height="440.66666666666663"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7gZ-Lw-wH9">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="318"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQu-mA-fdi">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="318"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_wave_1" translatesAutoresizingMaskIntoConstraints="NO" id="lCs-xl-BSN">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="318"/>
+                                            <color key="tintColor" red="0.99990195039999996" green="1" blue="0.99987989659999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_onboarding_light_1" translatesAutoresizingMaskIntoConstraints="NO" id="EPT-4l-SU2">
+                                            <rect key="frame" x="47.666666666666657" y="17" width="265.66666666666674" height="284"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="EPT-4l-SU2" firstAttribute="centerY" secondItem="lCs-xl-BSN" secondAttribute="centerY" id="AJv-PJ-ROH"/>
+                                        <constraint firstItem="EPT-4l-SU2" firstAttribute="centerX" secondItem="lCs-xl-BSN" secondAttribute="centerX" id="bhY-Ni-P4S"/>
+                                        <constraint firstItem="lCs-xl-BSN" firstAttribute="top" secondItem="qQu-mA-fdi" secondAttribute="top" id="hMB-IP-UxI"/>
+                                        <constraint firstItem="lCs-xl-BSN" firstAttribute="leading" secondItem="qQu-mA-fdi" secondAttribute="leading" id="jlP-fx-JRa"/>
+                                        <constraint firstAttribute="trailing" secondItem="lCs-xl-BSN" secondAttribute="trailing" id="pU1-9I-31Z"/>
+                                        <constraint firstAttribute="bottom" secondItem="lCs-xl-BSN" secondAttribute="bottom" id="vUg-ZV-Zxz"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lYC-Xe-DDi">
+                            <rect key="frame" x="147" y="378" width="67.333333333333314" height="62.666666666666686"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0A-Yh-BIi">
+                                    <rect key="frame" x="8" y="0.0" width="51" height="27.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                    <color key="textColor" red="0.47058823529999999" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqV-xG-PPT">
+                                    <rect key="frame" x="16.000000000000004" y="43.333333333333371" width="35.333333333333343" height="19.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                    <color key="textColor" red="0.27804309129714966" green="0.31624829769134521" blue="0.40359961986541748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="zqV-xG-PPT" secondAttribute="trailing" constant="16" id="7yG-Gu-HEz"/>
+                                <constraint firstItem="zqV-xG-PPT" firstAttribute="leading" secondItem="lYC-Xe-DDi" secondAttribute="leading" constant="16" id="cAz-xh-0FP"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="H2K-02-liI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7rU-Np-paT"/>
+                <constraint firstItem="H2K-02-liI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BH3-Fp-Lte"/>
+                <constraint firstItem="EPT-4l-SU2" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:2" id="Dzc-83-NC5"/>
+                <constraint firstItem="lCs-xl-BSN" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Qdl-Ky-TJm"/>
+                <constraint firstItem="H2K-02-liI" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="qJw-Gm-ZZH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-53.600000000000001" y="-329.18719211822662"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_onboarding_light_1" width="270" height="284"/>
+        <image name="ic_wave_1" width="375" height="312"/>
+    </resources>
+</document>

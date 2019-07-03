@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RescheduleCardOverlay" customModule="Taskem" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionStackView" destination="8Ya-jG-Mow" id="eGb-FE-tgB"/>
+                <outlet property="descriptionSubtitle" destination="tsT-tc-cW7" id="zd6-H2-CP1"/>
+                <outlet property="descriptionTitle" destination="I0L-PQ-3kP" id="OEq-mv-UOF"/>
+                <outlet property="descriptionTitleSubtitle" destination="ueV-Yx-dIR" id="SzO-hp-fHH"/>
+                <outlet property="icon" destination="qix-pT-b82" id="qaX-2P-Ai4"/>
+                <outlet property="iconStackView" destination="8NV-hF-69l" id="hzi-ll-NxM"/>
+                <outlet property="iconTitle" destination="QWl-i7-A37" id="LLv-nQ-OvJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="654"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8NV-hF-69l">
+                    <rect key="frame" x="128.66666666666666" y="252" width="117.66666666666666" height="150.33333333333337"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qix-pT-b82">
+                            <rect key="frame" x="9" y="0.0" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="LZx-Li-SSl"/>
+                                <constraint firstAttribute="width" constant="100" id="i66-Ip-TVL"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWl-i7-A37">
+                            <rect key="frame" x="0.0" y="119.99999999999999" width="117.66666666666667" height="30.333333333333329"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Ya-jG-Mow">
+                    <rect key="frame" x="128.66666666666666" y="240.33333333333331" width="117.66666666666666" height="173.33333333333331"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WUZ-tz-2t7">
+                            <rect key="frame" x="13.333333333333343" y="0.0" width="91" height="123"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0L-PQ-3kP">
+                                    <rect key="frame" x="0.0" y="0.0" width="91" height="68.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="50"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueV-Yx-dIR">
+                                    <rect key="frame" x="0.0" y="68.333333333333343" width="91" height="54.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="40"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsT-tc-cW7">
+                            <rect key="frame" x="0.0" y="142.99999999999997" width="117.66666666666667" height="30.333333333333343"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8Ya-jG-Mow" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AC6-Fz-Oa8"/>
+                <constraint firstItem="8NV-hF-69l" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Vef-lD-RJm"/>
+                <constraint firstItem="8Ya-jG-Mow" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hQd-vk-Tbk"/>
+                <constraint firstItem="8NV-hF-69l" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="uwd-CI-J8D"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="taskem_cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="33.5" y="47"/>
+        </view>
+    </objects>
+</document>

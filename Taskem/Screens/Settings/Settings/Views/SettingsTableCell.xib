@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SettingsTableCell" rowHeight="44" id="KGk-i7-Jjw" customClass="SettingsTableCell" customModule="Taskem" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YnT-HJ-Qad">
+                        <rect key="frame" x="52" y="0.0" width="226" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" text="TITLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kr-w6-7qZ">
+                                <rect key="frame" x="0.0" y="0.0" width="141.5" height="49.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" text="Description" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nN-5O-9XJ">
+                                <rect key="frame" x="151.5" y="0.0" width="74.5" height="49.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="44" id="kV0-ER-hvx"/>
+                        </constraints>
+                    </stackView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" placeholderIntrinsicWidth="30" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="Frb-F1-x53">
+                        <rect key="frame" x="20" y="16.5" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="WPy-QM-HGH"/>
+                            <constraint firstAttribute="width" constant="17" id="boJ-9w-Bnh"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="YnT-HJ-Qad" secondAttribute="bottom" id="6d1-yH-Pqv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YnT-HJ-Qad" secondAttribute="trailing" id="G8x-ii-uW1"/>
+                    <constraint firstItem="Frb-F1-x53" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GFz-hL-kU1"/>
+                    <constraint firstItem="YnT-HJ-Qad" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Urf-mQ-rPQ"/>
+                    <constraint firstItem="Frb-F1-x53" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dqa-pT-u0a"/>
+                    <constraint firstItem="YnT-HJ-Qad" firstAttribute="leading" secondItem="Frb-F1-x53" secondAttribute="trailing" constant="15" id="sqr-3D-QGn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptions" destination="6nN-5O-9XJ" id="9tS-Lp-dMT"/>
+                <outlet property="icon" destination="Frb-F1-x53" id="Hkq-sO-Ygi"/>
+                <outlet property="title" destination="9Kr-w6-7qZ" id="5Kj-Dc-raj"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="57"/>
+        </tableViewCell>
+    </objects>
+</document>

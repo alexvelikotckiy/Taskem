@@ -1,0 +1,37 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import AgendaFoundation
+
+class {{ prefix }}{{ module_info.name }}ViewController: UIViewController, {{ prefix }}{{ module_info.name }}View {
+   // MARK: IBOutlet
+
+   // MARK: IBAction
+
+   // MARK: let & var
+    var presenter: {{ prefix }}{{ module_info.name }}Presenter!
+    var viewModel: {{ prefix }}{{ module_info.name }}ViewModel = {{ prefix }}{{ module_info.name }}ViewModel()
+    weak var delegate: {{ prefix }}{{ module_info.name }}ViewDelegate?
+
+    // MARK: class func
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.delegate?.onViewWillAppear()
+    }
+
+    // MARK: func
+    func display(_ viewModel: {{ prefix }}{{ module_info.name }}ViewModel) {
+    }
+
+}

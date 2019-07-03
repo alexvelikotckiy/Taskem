@@ -1,0 +1,29 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+public struct {{ prefix }}{{ module_info.name }}ViewModel {
+
+}
+
+public struct {{ prefix }}{{ module_info.name }}ListViewModel {    
+    public var cells: [{{ prefix }}{{ module_info.name }}ViewModel]
+    
+    public init() {
+        self.cells = []
+    }
+    
+    public init(cells: [{{ prefix }}{{ module_info.name }}ViewModel]) {
+        self.cells = cells
+    }
+    
+    public func cell(for index: Int) -> {{ prefix }}{{ module_info.name }}ViewModel {
+        return cells[index]
+    }
+}

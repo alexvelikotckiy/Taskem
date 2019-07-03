@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleAllDoneView" customModule="Taskem" customModuleProvider="target">
+            <connections>
+                <outlet property="icon" destination="2zW-Md-UKa" id="EFZ-wM-oVt"/>
+                <outlet property="iconPlaceholder" destination="ixV-jt-ClJ" id="nKn-JV-y3e"/>
+                <outlet property="subtitle" destination="qtJ-jJ-ppf" id="knw-oH-MjU"/>
+                <outlet property="title" destination="Lgv-uP-a7Y" id="Wuc-Ew-UrY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="537"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="GHt-QK-HjD">
+                    <rect key="frame" x="-3" y="43.5" width="381" height="350"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6y-Na-EFe">
+                            <rect key="frame" x="0.0" y="0.0" width="381" height="242"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_picture_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="ixV-jt-ClJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="242"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_all_done_dark" translatesAutoresizingMaskIntoConstraints="NO" id="2zW-Md-UKa">
+                                    <rect key="frame" x="65.5" y="28.5" width="250" height="185"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="2zW-Md-UKa" firstAttribute="centerX" secondItem="f6y-Na-EFe" secondAttribute="centerX" id="6hM-uE-cVm"/>
+                                <constraint firstAttribute="trailing" secondItem="ixV-jt-ClJ" secondAttribute="trailing" id="FFO-nA-HVN"/>
+                                <constraint firstItem="2zW-Md-UKa" firstAttribute="centerY" secondItem="f6y-Na-EFe" secondAttribute="centerY" id="S7I-tC-3I9"/>
+                                <constraint firstItem="ixV-jt-ClJ" firstAttribute="leading" secondItem="f6y-Na-EFe" secondAttribute="leading" id="gwm-W8-QV6"/>
+                                <constraint firstItem="ixV-jt-ClJ" firstAttribute="top" secondItem="f6y-Na-EFe" secondAttribute="top" id="lkL-EC-enR"/>
+                                <constraint firstAttribute="bottom" secondItem="ixV-jt-ClJ" secondAttribute="bottom" id="oNd-Aa-CPK"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="xXV-Xa-soQ">
+                            <rect key="frame" x="89" y="287" width="203.5" height="63"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR ARE ALL DONE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgv-uP-a7Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="203.5" height="27.5"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                    <color key="textColor" red="0.47058823529999999" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap + to create a new task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-jJ-ppf">
+                                    <rect key="frame" x="18" y="43.5" width="167" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GHt-QK-HjD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2uV-Zx-Get"/>
+                <constraint firstItem="GHt-QK-HjD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-50" id="Ipy-XJ-TsO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="36" y="-34.632683658170919"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_all_done_dark" width="250" height="185"/>
+        <image name="ic_picture_placeholder" width="321" height="242"/>
+    </resources>
+</document>

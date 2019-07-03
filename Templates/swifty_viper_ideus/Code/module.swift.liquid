@@ -1,0 +1,31 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import PainlessInjection
+
+class {{ prefix }}{{ module_info.name }}Module: Module {
+
+    override func load() {
+        define({{ prefix }}{{ module_info.name }}ViewController.self) { (args: ArgumentList) -> {{ prefix }}{{ module_info.name }}ViewController? in
+
+            let storyboard = UIStoryboard(name: "{{ prefix }}{{ module_info.name }}ViewController", bundle: nil)
+            if let viewController = storyboard.instantiateViewController(withIdentifier: "{{ prefix }}{{ module_info.name }}ViewControllerID")
+                as? {{ prefix }}{{ module_info.name }}ViewController {
+
+                let router: {{ prefix }}{{ module_info.name }}Router = {{ prefix }}{{ module_info.name }}StandardRouter({{ module_info.name | downcase }}Controller: viewController)
+                let interactor = {{ prefix }}{{ module_info.name }}Interactor()
+                viewController.presenter = {{ prefix }}{{ module_info.name }}Presenter(view: viewController, router: router, interactor: interactor)
+                return viewController
+            }
+            print("Error create {{ prefix }}{{ module_info.name }}ViewController")
+            return nil
+        }
+    }
+
+}

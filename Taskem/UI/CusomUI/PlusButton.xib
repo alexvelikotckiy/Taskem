@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlusButton" customModule="Taskem" customModuleProvider="target">
+            <connections>
+                <outlet property="plus" destination="5W4-sx-lva" id="78G-Gp-8Tk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cbz-XC-bpt">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W4-sx-lva" customClass="DynamicButton" customModule="DynamicButton">
+                    <rect key="frame" x="0.0" y="0.0" width="46" height="46"/>
+                    <color key="backgroundColor" red="0.47058823529999999" green="0.63529411759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="5W4-sx-lva" firstAttribute="centerY" secondItem="Cbz-XC-bpt" secondAttribute="centerY" id="AuX-A6-eMw"/>
+                <constraint firstAttribute="trailing" secondItem="5W4-sx-lva" secondAttribute="trailing" id="L5Q-n3-ar7"/>
+                <constraint firstItem="5W4-sx-lva" firstAttribute="centerX" secondItem="Cbz-XC-bpt" secondAttribute="centerX" id="gw8-cn-e3Y"/>
+                <constraint firstItem="5W4-sx-lva" firstAttribute="top" secondItem="6Df-QC-IfM" secondAttribute="top" id="hBU-xq-dD4"/>
+                <constraint firstItem="5W4-sx-lva" firstAttribute="leading" secondItem="Cbz-XC-bpt" secondAttribute="leading" id="m8i-Dm-IEk"/>
+                <constraint firstItem="6Df-QC-IfM" firstAttribute="bottom" secondItem="5W4-sx-lva" secondAttribute="bottom" id="pBN-JE-nr1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6Df-QC-IfM"/>
+            <point key="canvasLocation" x="-592" y="-239.28035982008998"/>
+        </view>
+    </objects>
+</document>

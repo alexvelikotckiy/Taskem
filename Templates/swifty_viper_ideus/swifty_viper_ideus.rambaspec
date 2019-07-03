@@ -1,0 +1,19 @@
+# Template information section
+name: "swifty_viper_ideus"
+summary: "Swift VIPER module template with UIViewController playing as a View."
+author: "iDeus"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+
+- {name: Module.swift,  path: Code/module.swift.liquid}
+- {name: Interactor.swift, path: Code/interactor.swift.liquid}
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+- {name: Router.swift, path: Code/router.swift.liquid}
+- {name: View.swift, path: Code/view.swift.liquid}
+- {name: ViewController.swift, path: Code/viewcontroller.swift.liquid}
+- {name: ViewController.storyboard, path: Code/viewcontroller.storyboard.liquid}
+- {name: ViewModel.swift, path: Code/viewmodel.swift.liquid}
