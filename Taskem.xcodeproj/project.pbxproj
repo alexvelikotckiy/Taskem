@@ -711,7 +711,6 @@
 		C8A74F5421690A4F0006E46A /* ScheduleControlNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A74F5321690A4F0006E46A /* ScheduleControlNavigationBar.swift */; };
 		C8A74F9F2169396C0006E46A /* ScheduleControlToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A74F9E2169396C0006E46A /* ScheduleControlToolbar.swift */; };
 		C8ACCF95205196FC00380FE6 /* TaskNotesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8ACCF94205196FC00380FE6 /* TaskNotesViewController.storyboard */; };
-		C8ACFA7F22CCF9B100F46EE4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C8ACFA7E22CCF9B100F46EE4 /* README.md */; };
 		C8AD05DC21E258FA00E52321 /* GroupOverviewCreationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AD05DA21E258FA00E52321 /* GroupOverviewCreationCell.swift */; };
 		C8AD05DD21E258FA00E52321 /* GroupOverviewCreationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8AD05DB21E258FA00E52321 /* GroupOverviewCreationCell.xib */; };
 		C8ADCA8821E9F78500FA93A4 /* ScheduleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8ADCA8721E9F78500FA93A4 /* ScheduleTable.swift */; };
@@ -1751,7 +1750,6 @@
 		C8A74F5321690A4F0006E46A /* ScheduleControlNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleControlNavigationBar.swift; sourceTree = "<group>"; };
 		C8A74F9E2169396C0006E46A /* ScheduleControlToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleControlToolbar.swift; sourceTree = "<group>"; };
 		C8ACCF94205196FC00380FE6 /* TaskNotesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TaskNotesViewController.storyboard; sourceTree = "<group>"; };
-		C8ACFA7E22CCF9B100F46EE4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C8AD05DA21E258FA00E52321 /* GroupOverviewCreationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupOverviewCreationCell.swift; sourceTree = "<group>"; };
 		C8AD05DB21E258FA00E52321 /* GroupOverviewCreationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupOverviewCreationCell.xib; sourceTree = "<group>"; };
 		C8ADCA8721E9F78500FA93A4 /* ScheduleTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTable.swift; sourceTree = "<group>"; };
@@ -3185,7 +3183,6 @@
 		C82B52171FB745F100DFCD29 = {
 			isa = PBXGroup;
 			children = (
-				C8ACFA7E22CCF9B100F46EE4 /* README.md */,
 				C82B52221FB745F100DFCD29 /* Taskem */,
 				C82B52451FB745F100DFCD29 /* TaskemUITests */,
 				3DA029A7200188F10077CBE3 /* TaskemFoundation */,
@@ -5401,7 +5398,6 @@
 				B34FC932E029B573CE8A80E3 /* UserProfileViewController.storyboard in Resources */,
 				C89FCAE321D4D8E400AD1F33 /* GroupPopupNewGroupCell.xib in Resources */,
 				AECDD82D3006550415888C35 /* DefaultGroupPickerViewController.storyboard in Resources */,
-				C8ACFA7F22CCF9B100F46EE4 /* README.md in Resources */,
 				C8D8BEEF220389F000EB9956 /* consequence.m4a in Resources */,
 				C8D8BEEA220389F000EB9956 /* shoot-em.m4a in Resources */,
 				C87EA528211E2841004553CF /* ScheduleControlGroupCell.xib in Resources */,
