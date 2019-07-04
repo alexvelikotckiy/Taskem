@@ -57,7 +57,7 @@ Also, for ease of coding, there were used code generation utilities:
 - [Swiftgen][swiftgen-url] - conversion of images, colors into swift structures,
 - [SwiftMockGeneratorForXcode][mock-generator-url] - utility for Test Doubles generation.
 
-## Instalation ##
+## Installation ##
 
 The project uses [CocoaPods][pods-url] and [Carthage][carthage-url] for dependencies management.
 In case you don't use any of the mentioned above:
