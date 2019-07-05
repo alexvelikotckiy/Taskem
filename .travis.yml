@@ -2,8 +2,8 @@ language: swift
 os: osx
 osx_image: xcode10.2
 xcode_scheme: TaskemFoundationTests
-xcode_project: Taskem
-xcode_destination: platform=iOS Simulator,OS=12.3,name=iPhone X
+xcode_project: Taskem.xcodeproj
+xcode_sdk: iphonesimulator12.3
 
 cache:
   directories:
@@ -11,12 +11,18 @@ cache:
 
 before_install:
   - brew update
+  - if brew list | grep -q carthage; then
+      echo Carthage installed. Proceed without installing;
+      carthage version;
+    else
+      echo Carthage not installed. Installing using homebrew;
+      brew install carthage;
+    fi
   - brew outdated carthage || brew upgrade carthage
-    - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
+  - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
 before_script:
   # bootstrap the dependencies for the project
   # you can remove if you don't have dependencies
-  - carthage bootstrap
+  - carthage bootstrap --platform iOS
 before_deploy:
-  - carthage build --no-skip-current
-  - carthage archive $FRAMEWORK_NAME
+  - carthage build --no-skip-current --platform iOS
