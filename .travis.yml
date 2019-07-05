@@ -2,7 +2,7 @@ language: swift
 os: osx
 osx_image: xcode10.2
 xcode_scheme: TaskemFoundationTests
-xcode_project: Taskem.xcodeproj
+xcode_workspace: Taskem.xcworkspace
 xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone X
 
 cache:
