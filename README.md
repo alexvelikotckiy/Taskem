@@ -8,6 +8,7 @@
 ![Platform][ios-image]
 [![License][license-image]][license-url]
 ![Xcode][xcode-image]
+[![Build Status](https://travis-ci.org/alexvelikotckiy/Taskem.svg?branch=master)](https://travis-ci.org/alexvelikotckiy/Taskem)
 
 Taskem is a way to browse and maintain your tasks and goals on any iPhone device.
 Keep an eye on your tasks with the ability to view everything. The project’s goal is to show 
