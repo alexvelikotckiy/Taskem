@@ -24,4 +24,4 @@ before_script:
   # you can remove if you don't have dependencies
   - carthage bootstrap --verbose --no-use-binaries --platform iOS --cache-builds
 before_deploy:
-  - carthage build --no-skip-current --platform iOS --cache-builds
+  - carthage build --no-skip-current --platform iOS
